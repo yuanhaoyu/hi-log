@@ -1,3 +1,13 @@
-import hlog from './lib'
+import Hlog from './lib'
 
-export default hlog
+const hlogInstance = {
+  logInstance: null,
+  init(config) {
+    if (!logInstance) {
+      logInstance = new Hlog(config)
+    }
+    return logInstance
+  }
+}
+
+export default hlogInstance
