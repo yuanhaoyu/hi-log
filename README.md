@@ -1,9 +1,24 @@
 # hi-log
 
-一个简易的log
+前端日志/上报系统
 
 ## api
 
-1. Hlog()
+init(config)
 
-2. log()
+```javascript
+{
+    project: "project-name",
+    shake: true, // defualt true
+    reportCb: () => {}, // report callback , you can send msg when user report their problems
+}
+
+```
+
+log()
+
+
+report()
+
+
+shake()
